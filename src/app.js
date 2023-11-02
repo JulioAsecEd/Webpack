@@ -1,4 +1,4 @@
-//import "./css/style.css";
+import "./sass/style.scss";
 
 
 let students = null    
