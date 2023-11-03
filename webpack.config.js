@@ -23,7 +23,22 @@ module.exports = {
                 test: /\.css$/i, use : ["style-loader", "css-loader"]
             },
             {
-                test: /\.scss$/i, use: ["style-loader", "css-loader", "sass-loader"]
+                test: /\.scss$/i, use: ["style-loader", "css-loader", 
+                {
+                    loader: "postcss-loader",
+                    options: {
+                      postcssOptions: {
+                        plugins: [
+                          [
+                            "autoprefixer",
+                            {
+                              // Options
+                            },
+                          ],
+                        ],
+                      },
+                    },
+                  },"sass-loader"]
             }
         ]
     }
