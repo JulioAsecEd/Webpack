@@ -2,4 +2,6 @@
 $bg: beige;
 body{
     background-color: $bg;
+    transition: all 1s;
+    background-clip: text;
 }

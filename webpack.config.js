@@ -16,13 +16,13 @@ module.exports = {
           template: './index.html' //html template
         }),
         new miniCssWebpackPlugin({
-            filename: "css/style.css"
+            filename: "css/style.css" //indica o arquivo que irá carregar o style.css
         })
       ],
 
     output: {
         filename: "[name].bundle.js", //indica o documento js de saída
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, "dist") //indica o caminho de saída do bundle
     },
 
     module: {
