@@ -4,7 +4,7 @@ const miniCssWebpackPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     mode: 'development', //Indica ao webpack que este é o modo de desenvolvimento
-    entry: "./src/app.js",//entrada do documento principal js
+    entry: "./src/index.js",//entrada do documento principal js
 
     devServer: {
         static: './dist', //indica a pasta que o server irá buscar o index.html
